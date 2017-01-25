@@ -11,3 +11,14 @@
 	margin-bottom: 0;
 
 }
+
+.contato-tipo-pessoa, .select-solicitacao {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.contato-tipo-pessoa .radio:first-child {
+	margin-top: 0;
+}
