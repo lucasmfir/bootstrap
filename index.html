@@ -1,13 +1,177 @@
 <!doctype html>
 <html>
-		<head>
-				<meta charset="utf-8">
-				<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		</head>
-		<body>
-				
-				<h2>Sobre Nós</h2>
-				<img class="img-responsive" src="img/empresa.jpg" alt="">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2>Sobre Nós</h2>
+			<img class="img-responsive" src="img/empresa.jpg" alt="foto da empresa">
 			
-		</body>
+			<div class="panel-group" id="sobre-nos-painel">
+				<div class="panel panel-default">
+					<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#sobre-nos-painel">
+						<h3 class="panel-title">Desde 1935</h3>
+					</div>
+					<div class="panel-body collapse in" id="primeiro-paragrafo">
+						<p>Desde 1935 trazendo casas, mansões e prédios lindos para o mundo.</p>	
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#sobre-nos-painel">
+						<h3 class="panel-title">Preços acessíveis</h3>	
+					</div>
+					<div class="panel-body collapse" id="segundo-paragrafo">
+						<p>Preços a partir de R$ 1000,00.</p>	
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#sobre-nos-painel">
+						<h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
+					</div>
+					<div class="panel-body collapse" id="terceiro-paragrafo">
+						<p>Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="jumbotron">
+			<div class="container">
+				<h3>Mais de 300 prêmios em design e conforto.</h3>
+				<p>Mais de 5 milhões de clientes em todo o mundo.</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<h2>Nossos Projetos</h2>
+			<figure class="thumbnail">
+				<img src="img/projetos/casa-castelo.png" alt="casa castelo">
+				<figcaption class="caption">
+					<h3>Casa Castelo</h3>
+					<p>A Casa Castelo é o ultimo lançamento da...</p>
+				</figcaption>
+			</figure>	
+
+			<figure class="thumbnail">
+				<img src="img/projetos/casa-lago.png" alt="casa lago">
+				<figcaption class="caption">
+					<h3>Casa Castelo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+			</figure>	
+
+			<figure class="thumbnail">
+				<img src="img/projetos/mercado-marapira.png" alt="mercado marapira">
+				<figcaption class="caption">
+					<h3>Mercado Marapira</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+			</figure>	
+
+			<figure class="thumbnail">
+				<img src="img/projetos/palacio-dionisio.png" alt="palacio dionisio">
+				<figcaption class="caption">
+					<h3>Palácio Dionísio</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+			</figure>	
+
+			<figure class="thumbnail">
+				<img src="img/projetos/residencia-ludi.png" alt="resdencia ludi">
+				<figcaption class="caption">
+					<h3>Residência Ludi</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+			</figure>	
+		</div>
+
+		<section>
+			<h2 class="titulo-depoimentos container">Depoimentos de clientes</h2>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <figure class="item active">
+			      <img src="img/depoimentos/projetos0.png" alt="projeto 0">
+			      <figcaption class="carousel-caption">
+					<h3>Yuri</h3>
+					<p>Depoimento 0</p>
+			      </figcaption>
+			    </figure>
+			    <figure class="item">
+			      <img src="img/depoimentos/projetos1.png" alt="projeto 1">
+			      <figcaption class="carousel-caption">
+			        <h3>Fernando</h3>
+					<p>Depoimento 1</p>
+			      </figcaption>
+			    </figure>
+			    <figure class="item">
+			      <img src="img/depoimentos/projetos2.png" alt="projeto 2">
+			      <figcaption class="carousel-caption">
+			        <h3>Caio</h3>
+					<p>Depoimento 2</p>
+			      </figcaption>
+			    </figure>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+
+		</section>
+
+		<section class="container">
+			<h2>Vídeo Institucional</h2>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/TjS44KCtIVw" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section class="container">
+			<form>
+				<h2>Contato</h2>
+				<p>Entre em contato com a gente.</p>
+
+				<div class="form-group">
+					<label for="contato-nome">Nome:</label>
+					<input class="form-control" type="text" name="nome" id="contato-nome" placeholder="Seu nome">
+				</div>
+
+				<div class="form-group">
+					<label for="contato-email">E-mail:</label>
+					<div class="input-group">
+      					<div class="input-group-addon">@</div>
+						<input class="form-control" type="text" name="email" id="contato-email" placeholder="E-mail">
+					</div>
+				</div>
+			</form>
+		</section>
+
+		
+
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
 </html>
