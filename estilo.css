@@ -9,7 +9,15 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	margin-bottom: 0;
+	margin-right: -10px;
+	margin-left: 0;
+	width: 100%;
 
+}
+
+
+#depoimentos {
+	margin-right: 0;
 }
 
 .contato-tipo-pessoa, .select-solicitacao {
@@ -21,4 +29,69 @@
 
 .contato-tipo-pessoa .radio:first-child {
 	margin-top: 0;
+}
+
+footer {
+	margin-top: 10px;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+footer address:last-child {
+	margin-bottom: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+
+header {
+	height: 100%;
+	background-image: url(img/castelo.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	
+}
+
+.banner-principal {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	width: 75%;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
+}
+
+.banner-principal h1 {
+	margin-top: 0px;
+}
+
+@media(min-width: 100px){
+	#sobre {
+		padding-bottom: 20px;
+	}
+
+	#sobre-nos-painel {
+		margin-top: 0;
+	}
+}
+
+@media(min-width: 992px){
+	.banner-principal {
+		left: 0;
+		position: relative;
+		transform: translate(0%, -50%);
+		width: 60%;
+	}
+
+	.banner-principalWrapper {
+		height: 100%;
+	}
 }

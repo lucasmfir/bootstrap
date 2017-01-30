@@ -7,39 +7,82 @@
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 	</head>
 	<body>
-		<div class="container">
-			<h2>Sobre Nós</h2>
-			<img class="img-responsive" src="img/empresa.jpg" alt="foto da empresa">
-			
-			<div class="panel-group" id="sobre-nos-painel">
-				<div class="panel panel-default">
-					<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#sobre-nos-painel">
-						<h3 class="panel-title">Desde 1935</h3>
-					</div>
-					<div class="panel-body collapse in" id="primeiro-paragrafo">
-						<p>Desde 1935 trazendo casas, mansões e prédios lindos para o mundo.</p>	
-					</div>
-				</div>
+	<header>
+		<nav id="barra" class="navbar navbar-default">
+			<div class="container">
 				
-				<div class="panel panel-default">
-					<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#sobre-nos-painel">
-						<h3 class="panel-title">Preços acessíveis</h3>	
-					</div>
-					<div class="panel-body collapse" id="segundo-paragrafo">
-						<p>Preços a partir de R$ 1000,00.</p>	
-					</div>
-				</div>
+				<div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-colapsada" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+			</div>
 
-				<div class="panel panel-default">
-					<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#sobre-nos-painel">
-						<h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
+			<div class="collapse navbar-collapse" id="barra-colapsada">
+				<ul class="nav navbar-nav">
+					<li><a href="#sobre">Sobre nós</a></li>
+					<li><a href="#projetos">Projetos</a></li>
+					<li><a href="#depoimentos">Depoimentos</a></li>
+					<li><a href="#video">Video Institucional</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container banner-principalWrapper ">
+			<div class="banner-principal">
+				<h1>TopCasaFina Arquitetura</h1>
+				<p>Lorem ipsum dolor sit amet.</p>
+				<a href="#contato"><button class="btn btn-primary btn-lg">Contate-nos agora!</button></a>
+			</div>
+		</div>
+
+	</header>
+
+		
+		<section id ="sobre" class="container">
+			<h2>Sobre Nós</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-responsive" src="img/empresa.jpg" alt="foto da empresa">
+				</div>
+				<div class="col-md-6">
+					<div class="panel-group" id="sobre-nos-painel">
+						<div class="panel panel-default">
+							<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#sobre-nos-painel">
+								<h3 class="panel-title">Desde 1935</h3>
+							</div>
+							<div class="panel-body collapse in" id="primeiro-paragrafo">
+								<p>Desde 1935 trazendo casas, mansões e prédios lindos para o mundo.</p>	
+							</div>
+						</div>
 					</div>
-					<div class="panel-body collapse" id="terceiro-paragrafo">
-						<p>Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.</p>	
+				
+
+					<div class="panel panel-default">
+						<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#sobre-nos-painel">
+							<h3 class="panel-title">Preços acessíveis</h3>	
+						</div>
+						<div class="panel-body collapse" id="segundo-paragrafo">
+							<p>Preços a partir de R$ 1000,00.</p>	
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#sobre-nos-painel">
+							<h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
+						</div>
+						<div class="panel-body collapse" id="terceiro-paragrafo">
+							<p>Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.</p>	
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		
 
 
 		<div class="jumbotron">
@@ -50,50 +93,64 @@
 		</div>
 
 
-		<div class="container">
+		<section id="projetos" class="container">
 			<h2>Nossos Projetos</h2>
-			<figure class="thumbnail">
-				<img src="img/projetos/casa-castelo.png" alt="casa castelo">
-				<figcaption class="caption">
-					<h3>Casa Castelo</h3>
-					<p>A Casa Castelo é o ultimo lançamento da...</p>
-				</figcaption>
-			</figure>	
+			<div class="row">
 
-			<figure class="thumbnail">
-				<img src="img/projetos/casa-lago.png" alt="casa lago">
-				<figcaption class="caption">
-					<h3>Casa Castelo</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
-				</figcaption>
-			</figure>	
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<img src="img/projetos/casa-castelo.png" alt="casa castelo">
+						<figcaption class="caption">
+							<h3>Casa Castelo</h3>
+							<p>A Casa Castelo é o ultimo lançamento da...</p>
+						</figcaption>
+					</figure>	
+				</div>
 
-			<figure class="thumbnail">
-				<img src="img/projetos/mercado-marapira.png" alt="mercado marapira">
-				<figcaption class="caption">
-					<h3>Mercado Marapira</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
-				</figcaption>
-			</figure>	
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<img src="img/projetos/casa-lago.png" alt="casa lago">
+						<figcaption class="caption">
+							<h3>Casa Castelo</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+						</figcaption>
+					</figure>
+				</div>	
 
-			<figure class="thumbnail">
-				<img src="img/projetos/palacio-dionisio.png" alt="palacio dionisio">
-				<figcaption class="caption">
-					<h3>Palácio Dionísio</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
-				</figcaption>
-			</figure>	
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<img src="img/projetos/mercado-marapira.png" alt="mercado marapira">
+						<figcaption class="caption">
+							<h3>Mercado Marapira</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+						</figcaption>
+					</figure>	
+				</div>
 
-			<figure class="thumbnail">
-				<img src="img/projetos/residencia-ludi.png" alt="resdencia ludi">
-				<figcaption class="caption">
-					<h3>Residência Ludi</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
-				</figcaption>
-			</figure>	
-		</div>
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<img src="img/projetos/palacio-dionisio.png" alt="palacio dionisio">
+						<figcaption class="caption">
+							<h3>Palácio Dionísio</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+						</figcaption>
+					</figure>	
+				</div>
 
-		<section>
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<img src="img/projetos/residencia-ludi.png" alt="resdencia ludi">
+						<figcaption class="caption">
+							<h3>Residência Ludi</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+						</figcaption>
+					</figure>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="depoimentos">
 			<h2 class="titulo-depoimentos container">Depoimentos de clientes</h2>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
@@ -140,62 +197,73 @@
 			</div>
 
 		</section>
-
-		<section class="container">
-			<h2>Vídeo Institucional</h2>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/TjS44KCtIVw" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</section>
-
-		<section class="container">
-			<form>
-				<h2>Contato</h2>
-				<p>Entre em contato com a gente.</p>
-
-				<div class="form-group">
-					<label for="contato-nome">Nome:</label>
-					<input class="form-control" type="text" name="nome" id="contato-nome" placeholder="Seu nome">
+		<div class="row">
+			<section id="video" class="container col-sm-6">
+				<h2>Vídeo Institucional</h2>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/TjS44KCtIVw" frameborder="0" allowfullscreen></iframe>
 				</div>
+			</section>
 
-				<div class="form-group">
-					<label for="contato-email">E-mail:</label>
-					<div class="input-group">
-      					<div class="input-group-addon">@</div>
-						<input class="form-control" type="text" name="email" id="contato-email" placeholder="E-mail">
+			<section id="contato" class="container col-sm-6">
+				<form>
+					<h2>Contato</h2>
+					<p>Entre em contato com a gente.</p>
+
+					<div class="form-group">
+						<label for="contato-nome">Nome:</label>
+						<input class="form-control" type="text" name="nome" id="contato-nome" placeholder="Seu nome">
 					</div>
-				</div>
 
-				<div class="contato-tipo-pessoa form-group">
-					<div class="radio">
-						<label>
-							<input type="radio" name="tipo-pessoa" checked>Pessoa Física
-						</label>
+					<div class="form-group">
+						<label for="contato-email">E-mail:</label>
+						<div class="input-group">
+	      					<div class="input-group-addon">@</div>
+							<input class="form-control" type="text" name="email" id="contato-email" placeholder="E-mail">
+						</div>
 					</div>
-					<div class="radio">
-						<label>
-							<input type="radio" name="tipo-pessoa">Pessoa Jurídica
-						</label>
-					</div>
-				</div><!-- 
-				
-			--><select class="select-solicitacao form-control">
-					<option disabled selected>Tipo de Solicitação</option>
-					<option>Casa</option>
-					<option>Edifício</option>
-					<option>Escritório</option>
-				</select>
 
-				<button class="btn btn-primary" type="submit">Enviar</button>
-				
+					<div class="contato-tipo-pessoa form-group">
+						<div class="radio">
+							<label>
+								<input type="radio" name="tipo-pessoa" checked>Pessoa Física
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="tipo-pessoa">Pessoa Jurídica
+							</label>
+						</div>
+					</div><!-- 
+					
+				--><select class="select-solicitacao form-control">
+						<option disabled selected>Tipo de Solicitação</option>
+						<option>Casa</option>
+						<option>Edifício</option>
+						<option>Escritório</option>
+					</select>
 
-			</form>
-		</section>
+					<button class="btn btn-primary" type="submit">Enviar</button>
+					
 
-		
+				</form>
+			</section>
+		</div>
 
+		<footer>
+			<address>
+				<strong>TopCasaFina Arquitetura</strong><br>
+				Rua, Nº, Bairro<br>
+				Cidade, UF<br>
+				Tel: (01)2345-6789<br>
+			</address>
+			<address>
+				E-mail: email@email.com
+			</address>
+		</footer>
 
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="navbar-fix.js"></script>
 	</body>
 </html>
